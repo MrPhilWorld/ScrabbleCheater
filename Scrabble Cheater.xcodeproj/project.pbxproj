@@ -14,6 +14,7 @@
 		9897C2A3201D9FEB00DE15D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9897C2A1201D9FEB00DE15D2 /* LaunchScreen.storyboard */; };
 		9897C2AE201D9FEB00DE15D2 /* Scrabble_CheaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897C2AD201D9FEB00DE15D2 /* Scrabble_CheaterTests.swift */; };
 		9897C2B9201D9FEB00DE15D2 /* Scrabble_CheaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9897C2B8201D9FEB00DE15D2 /* Scrabble_CheaterUITests.swift */; };
+		98B56B5E20278C92008876E2 /* dictionnaire.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98B56B5D20278C92008876E2 /* dictionnaire.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9897C2B4201D9FEB00DE15D2 /* Scrabble CheaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scrabble CheaterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9897C2B8201D9FEB00DE15D2 /* Scrabble_CheaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrabble_CheaterUITests.swift; sourceTree = "<group>"; };
 		9897C2BA201D9FEB00DE15D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B56B5D20278C92008876E2 /* dictionnaire.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionnaire.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		9897C297201D9FEB00DE15D2 /* Scrabble Cheater */ = {
 			isa = PBXGroup;
 			children = (
+				98B56B5D20278C92008876E2 /* dictionnaire.txt */,
 				9897C298201D9FEB00DE15D2 /* AppDelegate.swift */,
 				9897C29A201D9FEB00DE15D2 /* ViewController.swift */,
 				9897C29C201D9FEB00DE15D2 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 				9897C2A3201D9FEB00DE15D2 /* LaunchScreen.storyboard in Resources */,
 				9897C2A0201D9FEB00DE15D2 /* Assets.xcassets in Resources */,
 				9897C29E201D9FEB00DE15D2 /* Main.storyboard in Resources */,
+				98B56B5E20278C92008876E2 /* dictionnaire.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
