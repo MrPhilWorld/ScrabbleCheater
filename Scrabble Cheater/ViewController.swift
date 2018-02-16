@@ -32,41 +32,16 @@ class ViewController: UIViewController {
     
     
     //Verify if the letter entered is valid, returns true if it is.
-    func charIsAllowed(char: Character) -> Bool
+    func isValid(char: Character) -> Bool
     {
-        if     char != "A"
-            && char != "B"
-            && char != "C"
-            && char != "D"
-            && char != "E"
-            && char != "F"
-            && char != "G"
-            && char != "H"
-            && char != "I"
-            && char != "J"
-            && char != "K"
-            && char != "L"
-            && char != "M"
-            && char != "N"
-            && char != "O"
-            && char != "P"
-            && char != "Q"
-            && char != "R"
-            && char != "S"
-            && char != "T"
-            && char != "U"
-            && char != "V"
-            && char != "W"
-            && char != "X"
-            && char != "Y"
-            && char != "Z"
-            && char != "*"
+        let validCharacters: [Character] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "*"]
+        if validCharacters.contains(char)
         {
-            return false
+            return true
         }
         else
         {
-            return true
+            return false
         }
     }
     
@@ -97,12 +72,10 @@ class ViewController: UIViewController {
         let letterFieldChars: Int = letterField.text!.count
         let letters: String = letterField.text ?? ""
 
-        // nice work in progress, and documentation of course!
-
         //Verify if we need to replace a letter for another one
         if letterFieldChars > 1
         {
-            if charIsAllowed(char: letters.last!)
+            if isValid(char: letters.last!)
             {
                 letterField.text = String(describing: letters.last!)
             }
@@ -115,11 +88,7 @@ class ViewController: UIViewController {
         //Verify if the letter entered is valid, else we replace it by null
         if letterFieldChars > 0
         {
-            if !charIsAllowed(char: letters.last!)
-            {
-                letterField.text = ""
-            }
-            else
+            if isValid(char: letters.last!)
             {
                 //The letter is valid, we change the selected textfield to the next one on the right
                 for currentLetter in 0...6
@@ -128,12 +97,16 @@ class ViewController: UIViewController {
                     {
                         letterFields[currentLetter + 1].becomeFirstResponder()
                     }
-                    //If we are on the last textfield, no textfield is selected
+                        //If we are on the last textfield, no textfield is selected
                     else if letterField == letterFields[6]
                     {
                         letterFields[6].resignFirstResponder()
                     }
                 }
+            }
+            else
+            {
+                letterField.text = ""
             }
         }
     }
