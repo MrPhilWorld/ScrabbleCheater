@@ -97,7 +97,7 @@ class ViewController: UIViewController {
                     {
                         letterFields[currentLetter + 1].becomeFirstResponder()
                     }
-                        //If we are on the last textfield, no textfield is selected
+                    //If we are on the last textfield, no textfield is selected
                     else if letterField == letterFields[6]
                     {
                         letterFields[6].resignFirstResponder()
