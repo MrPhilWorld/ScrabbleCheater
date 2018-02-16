@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     //"Find the Words!" button variable
     @IBOutlet weak var findWordsButton: UIButton!
     
+    //"Add board letters (+)" button variable
+    @IBOutlet weak var addBoardLettersButton: UIButton!
+    
     var letterFields: [UITextField]!
     
     
@@ -75,8 +78,9 @@ class ViewController: UIViewController {
              letter6,
              letter7]
         
-        //Round the "Find the Words!" button
+        //Round the "Find the Words!" and "addBoardLetters" button
         findWordsButton.layer.cornerRadius = 5
+        addBoardLettersButton.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {
@@ -175,7 +179,7 @@ class ViewController: UIViewController {
     }
     
     
-    
+    //This is a change to test github
     
     
 }

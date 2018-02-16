@@ -158,6 +158,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addBoardLettersButton" destination="imF-hD-ZPO" id="37C-ck-QMt"/>
                         <outlet property="findWordsButton" destination="vsL-8g-Cjl" id="qE1-3V-xEV"/>
                         <outlet property="letter1" destination="pTl-D0-v6P" id="L1C-E2-ybM"/>
                         <outlet property="letter2" destination="s8U-a7-aIv" id="69B-sa-2fh"/>
