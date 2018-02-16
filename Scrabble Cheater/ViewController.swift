@@ -25,7 +25,10 @@ class ViewController: UIViewController {
     //"Add board letters (+)" button variable
     @IBOutlet weak var addBoardLettersButton: UIButton!
     
+    @IBOutlet weak var isTextEmpty: UILabel!
+    
     var letterFields: [UITextField]!
+    
     
     
     //Verify if the letter entered is valid, returns true if it is.
@@ -135,7 +138,6 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var isTextEmpty: UILabel!
     //The user press on the button "Find the Words!"
     @IBAction func findWords(_ sender: Any) {
         var fieldIsEmpty: Bool = false
