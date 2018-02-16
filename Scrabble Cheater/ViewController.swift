@@ -89,7 +89,9 @@ class ViewController: UIViewController {
         let letterField: UITextField = sender
         let letterFieldChars: Int = letterField.text!.count
         let letters: String = letterField.text ?? ""
-        
+
+        // nice documentation!
+
         //Verify if we need to replace a letter for another one
         if letterFieldChars > 1
         {
