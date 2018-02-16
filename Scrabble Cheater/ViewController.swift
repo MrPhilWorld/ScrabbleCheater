@@ -94,7 +94,7 @@ class ViewController: UIViewController {
         let letterFieldChars: Int = letterField.text!.count
         let letters: String = letterField.text ?? ""
 
-        // nice documentation?
+        // nice work in progress, and documentation of course!
 
         //Verify if we need to replace a letter for another one
         if letterFieldChars > 1
