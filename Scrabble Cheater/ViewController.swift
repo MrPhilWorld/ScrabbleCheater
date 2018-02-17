@@ -29,22 +29,6 @@ class ViewController: UIViewController {
     
     var letterFields: [UITextField]!
     
-    
-    
-    //Verify if the letter entered is valid, returns true if it is.
-    func isValid(char: Character) -> Bool
-    {
-        let validCharacters: [Character] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "*"]
-        if validCharacters.contains(char)
-        {
-            return true
-        }
-        else
-        {
-            return false
-        }
-    }
-    
     //Initialise the variables for the app
     override func viewDidLoad() {
         letterFields =
@@ -75,7 +59,7 @@ class ViewController: UIViewController {
         //Verify if we need to replace a letter for another one
         if letterFieldChars > 1
         {
-            if isValid(char: letters.last!)
+            if letters.last!.isValid()
             {
                 letterField.text = String(describing: letters.last!)
             }
@@ -88,7 +72,7 @@ class ViewController: UIViewController {
         //Verify if the letter entered is valid, else we replace it by null
         if letterFieldChars > 0
         {
-            if isValid(char: letters.last!)
+            if letters.last!.isValid()
             {
                 //The letter is valid, we change the selected textfield to the next one on the right
                 for currentLetter in 0...6
